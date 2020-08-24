@@ -41,3 +41,5 @@ wineRed,"{'n_jobs': None, 'n_neighbors': 21, 'weights': 'distance'}",3,0.6953212
 wineRed,"{'n_jobs': None, 'n_neighbors': 21, 'weights': 'distance'}",4,0.670168116058462,0.7400090701396379
 wineWhite,"{'n_jobs': None, 'n_neighbors': 51, 'weights': 'distance'}",0,0.754555594904035,0.6822237792165533
 wineWhite,"{'n_jobs': None, 'n_neighbors': 27, 'weights': 'distance'}",1,0.7521411955823407,0.6772168535086388
+wineWhite,"{'n_jobs': None, 'n_neighbors': 27, 'weights': 'distance'}",2,0.7410881550874495,0.7250834138872416
+wineWhite,"{'n_jobs': None, 'n_neighbors': 31, 'weights': 'distance'}",3,0.7532990737746241,0.680587118486188
