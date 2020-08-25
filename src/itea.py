@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression 
 
 from typing   import Dict, Callable, List, Tuple, Union
-from nptyping import Array 
+#from nptyping import Array 
 
 # To run type checking (still in development): mypy --ignore-missing-imports itea.py 
 # (this requires typing, nptyping and mypy)

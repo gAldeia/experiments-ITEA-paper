@@ -43,3 +43,9 @@ wineWhite,"{'n_jobs': None, 'n_neighbors': 51, 'weights': 'distance'}",0,0.75455
 wineWhite,"{'n_jobs': None, 'n_neighbors': 27, 'weights': 'distance'}",1,0.7521411955823407,0.6772168535086388
 wineWhite,"{'n_jobs': None, 'n_neighbors': 27, 'weights': 'distance'}",2,0.7410881550874495,0.7250834138872416
 wineWhite,"{'n_jobs': None, 'n_neighbors': 31, 'weights': 'distance'}",3,0.7532990737746241,0.680587118486188
+wineWhite,"{'n_jobs': None, 'n_neighbors': 52, 'weights': 'distance'}",4,0.7536476625935247,0.675312898811114
+towerData,"{'n_jobs': None, 'n_neighbors': 3, 'weights': 'distance'}",0,17.42845360739794,13.971794946698086
+towerData,"{'n_jobs': None, 'n_neighbors': 2, 'weights': 'distance'}",1,16.73423764918825,16.152127650611853
+towerData,"{'n_jobs': None, 'n_neighbors': 2, 'weights': 'distance'}",2,17.446425402642774,15.164920190765171
+towerData,"{'n_jobs': None, 'n_neighbors': 2, 'weights': 'distance'}",3,17.735095096290976,13.637119786105506
+towerData,"{'n_jobs': None, 'n_neighbors': 3, 'weights': 'distance'}",4,17.339542967440124,14.628967247060226
