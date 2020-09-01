@@ -213,3 +213,35 @@ if __name__=='__main__':
 
     print('done')
     
+# documentação: https://darioizzo.github.io/dcgp/installation.html
+
+fname = '../docs/dCartesian-resultsregression.csv'
+
+resultsDF = pd.read_csv(fname)
+
+pd.set_option('display.max_colwidth', None) #não truncar colunas usando display
+
+# Tá dando crash no número de constantes aleatórias
+display(resultsDF)
+
+# Obtendo a melhor configuração para cada dataset
+
+
+# Pegar, para cada dataset-fold-rep, a configuração de menor RMSE_cv
+resultsDF_ = resultsDF.loc[resultsDF.groupby(['dataset', 'Fold', 'Rep'])['RMSE_cv'].idxmin()]
+resultsDF_ = resultsDF_.set_index(['dataset', 'Fold', 'Rep'])
+display(resultsDF_)
+
+# Tirando a média da melhor configuração em cada fold (e descartando 2 primeiras colunas, configuração e cv)
+resultsDF_median = resultsDF_.groupby(['dataset']).mean().iloc[:, 2:]
+resultsDF_median.columns = ['RMSE_train_mean', 'RMSE_test_mean']
+display(resultsDF_median)
+
+# Colocando o desvio padrão e tirando as 2 primeiras colunas (fold e rep, não interessam)
+resultsDF_std = resultsDF_.groupby(['dataset']).std().iloc[:, 2:]
+resultsDF_std.columns = ['RMSE_train_std', 'RMSE_test_std']
+display(resultsDF_std)
+
+# juntando tudo em um só
+resultsDF_ = pd.merge(resultsDF_median, resultsDF_std, left_index=True, right_index=True)
+display(resultsDF_)

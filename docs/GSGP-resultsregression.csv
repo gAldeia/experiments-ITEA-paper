@@ -1,67 +1,301 @@
 dataset,conf,Fold,Rep,RMSE_cv,RMSE_train,RMSE_test
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",0,0,12.654936,8.816360000000003,8.98909
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",0,1,12.654936,6.56769,6.97319
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",0,2,12.654936,7.37517,7.70061
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",0,3,12.654936,8.02155,8.4205
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",0,4,12.654936,3.3913,3.65826
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",0,5,12.654936,15.6691,16.0473
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",1,0,9.505136,8.01037,7.82103
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",1,1,9.505136,11.2315,11.7727
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",1,2,9.505136,16.2012,16.6269
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",1,3,9.505136,4.94896,4.89879
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",1,4,9.505136,9.69338,9.73462
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",1,5,9.505136,10.241,10.6122
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.8, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.19999999999999996}",2,0,13.70817,11.4771,10.5612
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.8, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.19999999999999996}",2,1,13.70817,12.2712,11.1803
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.8, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.19999999999999996}",2,2,13.70817,12.7225,11.5438
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.8, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.19999999999999996}",2,3,13.70817,14.9544,13.7611
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.8, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.19999999999999996}",2,4,13.70817,12.8954,11.9282
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.8, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.19999999999999996}",2,5,13.70817,22.6454,20.9186
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",3,0,10.534714,6.65057,6.80996
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",3,1,10.534714,6.73952,7.3121199999999975
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",3,2,10.534714,9.7645,10.3896
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",3,3,10.534714,16.4142,16.7858
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",3,4,10.534714,8.243780000000001,8.7634
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",3,5,10.534714,5.82449,6.188359999999999
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",4,0,12.478027999999998,19.8221,19.4979
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",4,1,12.478027999999998,7.3687,7.95856
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",4,2,12.478027999999998,5.9938,6.42586
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",4,3,12.478027999999998,16.5506,17.0721
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",4,4,12.478027999999998,7.3124699999999985,7.12208
-airfoil,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",4,5,12.478027999999998,10.1122,10.4656
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.5, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.5}",0,0,7.6773120000000015,7.38828,7.38939
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.5, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.5}",0,1,7.6773120000000015,7.7081399999999975,7.62655
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.5, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.5}",0,2,7.6773120000000015,7.64683,7.47125
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.5, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.5}",0,3,7.6773120000000015,7.1380399999999975,7.30094
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.5, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.5}",0,4,7.6773120000000015,8.1462,9.61725
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.5, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.5}",0,5,7.6773120000000015,8.00928,8.12111
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",1,0,7.639098,7.08864,7.37587
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",1,1,7.639098,7.24297,7.76094
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",1,2,7.639098,6.96167,7.37096
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",1,3,7.639098,7.19487,7.39375
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",1,4,7.639098,8.09868,8.21313
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",1,5,7.639098,6.69915,7.042560000000001
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.5, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.5}",2,0,7.824389999999997,7.44768,9.12813
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.5, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.5}",2,1,7.8243899999999975,6.969289999999999,8.253789999999999
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.5, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.5}",2,2,7.824389999999997,10.1168,12.5088
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.5, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.5}",2,3,7.8243899999999975,7.41511,8.63935
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.5, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.5}",2,4,7.824389999999997,7.03545,8.43436
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.5, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.5}",2,5,7.8243899999999975,6.08825,7.13505
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",3,0,7.506947999999999,6.26227,6.805510000000001
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",3,1,7.506947999999999,6.6535,7.4158100000000005
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",3,2,7.506947999999999,6.649960000000001,7.45838
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",3,3,7.506947999999999,6.726610000000001,7.3323100000000005
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",3,4,7.506947999999999,7.701789999999999,8.45412
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",3,5,7.506947999999999,6.69866,7.094760000000001
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",4,0,7.493878,6.862139999999999,7.1601
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",4,1,7.493878,7.279539999999999,7.87914
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",4,2,7.493878,7.17897,7.26913
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",4,3,7.493878,6.61448,6.8845199999999975
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",4,4,7.493878,7.25443,7.80702
-concrete,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",4,5,7.493878,6.9252199999999995,7.37253
-energyCooling,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",0,0,1.996822,1.94873,2.21296
-energyCooling,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",0,1,1.996822,2.3355799999999998,2.4579
-energyCooling,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",0,2,1.996822,1.6994900000000002,1.93947
-energyCooling,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",0,3,1.996822,1.6452099999999998,1.8879400000000002
-energyCooling,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",0,4,1.996822,2.32134,2.51812
-energyCooling,"{'population_size': 100, 'init_type': 2, 'p_crossover': 0.2, 'max_depth_creation': 5, 'tournament_size': 4, 'zero_depth': 0, 'mutation_step': 1.0, 'num_random_constants': 0, 'min_random_constant': -100, 'max_random_constant': 100, 'minimization_problem': 1, 'random_tree': 500, 'max_number_generations': 1000, 'p_mutation': 0.8}",0,5,1.9968219999999999,2.23215,2.41368
+airfoil,0,0,0,12.654936,8.816360000000003,8.98909
+airfoil,0,0,1,12.654936,6.56769,6.97319
+airfoil,0,0,2,12.654936,7.37517,7.70061
+airfoil,0,0,3,12.654936,8.02155,8.4205
+airfoil,0,0,4,12.654936,3.3913,3.65826
+airfoil,0,0,5,12.654936,15.6691,16.0473
+airfoil,0,1,0,9.505136,8.01037,7.82103
+airfoil,0,1,1,9.505136,11.2315,11.7727
+airfoil,0,1,2,9.505136,16.2012,16.6269
+airfoil,0,1,3,9.505136,4.94896,4.89879
+airfoil,0,1,4,9.505136,9.69338,9.73462
+airfoil,0,1,5,9.505136,10.241,10.6122
+airfoil,2,2,0,13.70817,11.4771,10.5612
+airfoil,2,2,1,13.70817,12.2712,11.1803
+airfoil,2,2,2,13.70817,12.7225,11.5438
+airfoil,2,2,3,13.70817,14.9544,13.7611
+airfoil,2,2,4,13.70817,12.8954,11.9282
+airfoil,2,2,5,13.70817,22.6454,20.9186
+airfoil,0,3,0,10.534714,6.65057,6.80996
+airfoil,0,3,1,10.534714,6.73952,7.3121199999999975
+airfoil,0,3,2,10.534714,9.7645,10.3896
+airfoil,0,3,3,10.534714,16.4142,16.7858
+airfoil,0,3,4,10.534714,8.243780000000001,8.7634
+airfoil,0,3,5,10.534714,5.82449,6.188359999999999
+airfoil,0,4,0,12.478027999999998,19.8221,19.4979
+airfoil,0,4,1,12.478027999999998,7.3687,7.95856
+airfoil,0,4,2,12.478027999999998,5.9938,6.42586
+airfoil,0,4,3,12.478027999999998,16.5506,17.0721
+airfoil,0,4,4,12.478027999999998,7.3124699999999985,7.12208
+airfoil,0,4,5,12.478027999999998,10.1122,10.4656
+concrete,1,0,0,7.6773120000000015,7.38828,7.38939
+concrete,1,0,1,7.6773120000000015,7.7081399999999975,7.62655
+concrete,1,0,2,7.6773120000000015,7.64683,7.47125
+concrete,1,0,3,7.6773120000000015,7.1380399999999975,7.30094
+concrete,1,0,4,7.6773120000000015,8.1462,9.61725
+concrete,1,0,5,7.6773120000000015,8.00928,8.12111
+concrete,0,1,0,7.639098,7.08864,7.37587
+concrete,0,1,1,7.639098,7.24297,7.76094
+concrete,0,1,2,7.639098,6.96167,7.37096
+concrete,0,1,3,7.639098,7.19487,7.39375
+concrete,0,1,4,7.639098,8.09868,8.21313
+concrete,0,1,5,7.639098,6.69915,7.042560000000001
+concrete,1,2,0,7.824389999999997,7.44768,9.12813
+concrete,1,2,1,7.8243899999999975,6.969289999999999,8.253789999999999
+concrete,1,2,2,7.824389999999997,10.1168,12.5088
+concrete,1,2,3,7.8243899999999975,7.41511,8.63935
+concrete,1,2,4,7.824389999999997,7.03545,8.43436
+concrete,1,2,5,7.8243899999999975,6.08825,7.13505
+concrete,0,3,0,7.506947999999999,6.26227,6.805510000000001
+concrete,0,3,1,7.506947999999999,6.6535,7.4158100000000005
+concrete,0,3,2,7.506947999999999,6.649960000000001,7.45838
+concrete,0,3,3,7.506947999999999,6.726610000000001,7.3323100000000005
+concrete,0,3,4,7.506947999999999,7.701789999999999,8.45412
+concrete,0,3,5,7.506947999999999,6.69866,7.094760000000001
+concrete,0,4,0,7.493878,6.862139999999999,7.1601
+concrete,0,4,1,7.493878,7.279539999999999,7.87914
+concrete,0,4,2,7.493878,7.17897,7.26913
+concrete,0,4,3,7.493878,6.61448,6.8845199999999975
+concrete,0,4,4,7.493878,7.25443,7.80702
+concrete,0,4,5,7.493878,6.9252199999999995,7.37253
+energyCooling,0,0,0,1.996822,1.94873,2.21296
+energyCooling,0,0,1,1.996822,2.3355799999999998,2.4579
+energyCooling,0,0,2,1.996822,1.6994900000000002,1.93947
+energyCooling,0,0,3,1.996822,1.6452099999999998,1.8879400000000002
+energyCooling,0,0,4,1.996822,2.32134,2.51812
+energyCooling,0,0,5,1.996822,2.23215,2.41368
+energyCooling,0,1,0,2.081628,1.74868,1.6763
+energyCooling,0,1,1,2.081628,2.09085,2.02773
+energyCooling,0,1,2,2.081628,2.16611,2.135
+energyCooling,0,1,3,2.081628,1.8310400000000002,1.7441
+energyCooling,0,1,4,2.081628,2.24123,2.20166
+energyCooling,0,1,5,2.081628,2.00363,2.03084
+energyCooling,0,2,0,2.154284,2.0138,2.08262
+energyCooling,0,2,1,2.154284,4.0137,3.84225
+energyCooling,0,2,2,2.154284,1.92454,1.87156
+energyCooling,0,2,3,2.154284,1.7327299999999999,1.66297
+energyCooling,0,2,4,2.154284,1.8076,2.00331
+energyCooling,0,2,5,2.154284,1.6987900000000002,1.7050299999999998
+energyCooling,0,3,0,2.14181,2.54714,2.88455
+energyCooling,0,3,1,2.14181,2.00562,2.03286
+energyCooling,0,3,2,2.14181,1.98617,1.96607
+energyCooling,0,3,3,2.14181,1.6550799999999999,1.7619599999999995
+energyCooling,0,3,4,2.14181,1.95346,2.11936
+energyCooling,0,3,5,2.14181,1.8474099999999998,1.8861299999999999
+energyCooling,0,4,0,1.976702,2.13068,2.24127
+energyCooling,0,4,1,1.976702,1.9957900000000002,2.03418
+energyCooling,0,4,2,1.976702,1.96489,1.97661
+energyCooling,0,4,3,1.976702,2.3491299999999997,2.34678
+energyCooling,0,4,4,1.976702,2.00716,2.09033
+energyCooling,0,4,5,1.976702,2.13334,2.1585900000000002
+energyHeating,1,0,0,1.4813040000000002,1.24597,1.34144
+energyHeating,1,0,1,1.4813040000000002,1.69425,1.7620799999999999
+energyHeating,1,0,2,1.4813040000000002,1.9593,2.25964
+energyHeating,1,0,3,1.4813040000000002,1.04318,1.05829
+energyHeating,1,0,4,1.4813040000000002,1.41022,1.55037
+energyHeating,1,0,5,1.4813040000000002,1.47484,1.6285399999999999
+energyHeating,0,1,0,1.3099900000000002,0.963284,1.01762
+energyHeating,0,1,1,1.3099900000000002,1.15431,1.33497
+energyHeating,0,1,2,1.3099900000000002,2.0516,2.20094
+energyHeating,0,1,3,1.3099900000000002,1.12212,1.22444
+energyHeating,0,1,4,1.3099900000000002,1.12161,1.07695
+energyHeating,0,1,5,1.3099900000000002,1.72882,1.92209
+energyHeating,2,2,0,1.7158939999999998,2.49287,2.40657
+energyHeating,2,2,1,1.7158939999999998,2.1593299999999997,1.99615
+energyHeating,2,2,2,1.7158939999999998,2.09345,2.10183
+energyHeating,2,2,3,1.7158939999999998,1.62648,1.67082
+energyHeating,2,2,4,1.7158939999999998,1.68918,1.61639
+energyHeating,2,2,5,1.7158939999999998,1.9668700000000001,1.86122
+energyHeating,1,3,0,1.395702,1.42749,1.61202
+energyHeating,1,3,1,1.395702,1.70723,1.8858599999999999
+energyHeating,1,3,2,1.395702,1.95768,2.23303
+energyHeating,1,3,3,1.395702,1.8885,2.12392
+energyHeating,1,3,4,1.395702,0.985817,1.08168
+energyHeating,1,3,5,1.395702,0.927625,0.9439799999999999
+energyHeating,1,4,0,1.532808,0.951108,0.992943
+energyHeating,1,4,1,1.532808,1.7982,1.67523
+energyHeating,1,4,2,1.532808,0.801048,0.851764
+energyHeating,1,4,3,1.532808,1.08899,1.13523
+energyHeating,1,4,4,1.532808,1.48423,1.42447
+energyHeating,1,4,5,1.532808,1.01349,1.15315
+Geographical,0,0,0,43.90222,41.0394,46.4585
+Geographical,0,0,1,43.90222,40.8604,46.1184
+Geographical,0,0,2,43.90222,40.5322,44.5445
+Geographical,0,0,3,43.90222,42.6649,48.1172
+Geographical,0,0,4,43.90222,41.0562,45.3593
+Geographical,0,0,5,43.90222,40.5894,45.6782
+Geographical,0,1,0,45.06985999999999,41.6262,45.5565
+Geographical,0,1,1,45.06985999999999,42.8902,46.5761
+Geographical,0,1,2,45.06985999999999,41.1432,43.8411
+Geographical,0,1,3,45.06985999999999,41.1185,43.8395
+Geographical,0,1,4,45.06985999999999,40.9049,44.3832
+Geographical,0,1,5,45.06985999999999,40.830999999999996,45.3405
+Geographical,1,2,0,45.33130000000001,42.9599,43.3225
+Geographical,1,2,1,45.33130000000001,42.6481,42.4311
+Geographical,1,2,2,45.33130000000001,42.7974,42.8509
+Geographical,1,2,3,45.33130000000001,42.8791,43.3023
+Geographical,1,2,4,45.33130000000001,42.4782,42.4178
+Geographical,1,2,5,45.33130000000001,41.6255,44.6454
+Geographical,1,3,0,44.69880000000001,42.6453,42.6065
+Geographical,1,3,1,44.69880000000001,42.4893,42.93600000000001
+Geographical,1,3,2,44.69880000000001,42.79600000000001,42.7536
+Geographical,1,3,3,44.69880000000001,42.8675,43.3069
+Geographical,1,3,4,44.69880000000001,42.6892,42.3384
+Geographical,1,3,5,44.69880000000001,44.7782,41.9279
+Geographical,1,4,0,44.2248,42.4324,45.0434
+Geographical,1,4,1,44.2248,42.4628,44.6475
+Geographical,1,4,2,44.2248,41.6949,44.7264
+Geographical,1,4,3,44.2248,41.9813,45.3259
+Geographical,1,4,4,44.2248,41.9752,44.7052
+Geographical,1,4,5,44.2248,41.5321,45.4095
+towerData,8,0,0,61.9057,58.1488,63.146
+towerData,8,0,1,61.9057,68.5042,71.3789
+towerData,8,0,2,61.9057,70.7471,73.7409
+towerData,8,0,3,61.9057,61.8815,64.8034
+towerData,8,0,4,61.9057,62.7438,66.1134
+towerData,8,0,5,61.9057,61.0879,64.0292
+towerData,8,1,0,63.35366000000001,63.0128,60.755
+towerData,8,1,1,63.35366000000001,59.6869,57.8475
+towerData,8,1,2,63.35366000000001,62.2135,60.6871
+towerData,8,1,3,63.35366000000001,69.2062,67.4694
+towerData,8,1,4,63.35366000000001,63.3858,62.0001
+towerData,8,1,5,63.35366000000001,58.516999999999996,55.5012
+towerData,7,2,0,61.55538000000001,62.0833,62.5183
+towerData,7,2,1,61.55538000000001,63.913999999999994,64.6975
+towerData,7,2,2,61.55538000000001,65.10300000000001,66.5303
+towerData,7,2,3,61.55538000000001,58.21100000000001,59.2895
+towerData,7,2,4,61.55538000000001,58.7499,59.7397
+towerData,7,2,5,61.55538000000001,65.1135,65.8813
+towerData,4,3,0,61.3507,62.9655,61.6695
+towerData,4,3,1,61.3507,61.7347,59.9499
+towerData,4,3,2,61.3507,72.2337,73.1029
+towerData,4,3,3,61.3507,66.993,66.6432
+towerData,4,3,4,61.3507,66.5285,65.5459
+towerData,4,3,5,61.3507,76.2067,76.0384
+towerData,7,4,0,59.80936000000001,60.4121,59.2395
+towerData,7,4,1,59.80936000000001,55.8293,54.9825
+towerData,7,4,2,59.80936000000001,60.4708,60.523
+towerData,7,4,3,59.80936000000001,69.4912,68.498
+towerData,7,4,4,59.80936000000001,67.9341,66.8366
+towerData,7,4,5,59.80936000000001,62.0413,60.7523
+tecator,7,0,0,1.433144,1.0407,1.4218
+tecator,7,0,1,1.433144,1.59559,1.62782
+tecator,7,0,2,1.433144,1.02015,1.1527
+tecator,7,0,3,1.433144,2.3694599999999997,3.21614
+tecator,7,0,4,1.433144,2.30464,3.07696
+tecator,7,0,5,1.433144,0.904603,1.56741
+tecator,0,1,0,1.3066346000000002,0.6888850000000001,1.28804
+tecator,0,1,1,1.3066346000000002,0.632598,1.32064
+tecator,0,1,2,1.3066346000000002,0.812955,1.33753
+tecator,0,1,3,1.3066346000000002,0.771065,1.1761
+tecator,0,1,4,1.3066346000000002,0.935038,1.37151
+tecator,0,1,5,1.3066346000000002,0.733675,1.09264
+tecator,1,2,0,1.404324,2.02932,2.38133
+tecator,1,2,1,1.404324,0.8743879999999999,1.25384
+tecator,1,2,2,1.404324,0.870461,1.1246
+tecator,1,2,3,1.404324,0.813654,1.63503
+tecator,1,2,4,1.404324,0.7787470000000001,1.3903
+tecator,1,2,5,1.404324,0.973533,1.44753
+tecator,0,3,0,1.2001323999999998,0.8036270000000001,1.2026
+tecator,0,3,1,1.2001323999999998,0.79875,1.2554
+tecator,0,3,2,1.2001323999999998,0.7915479999999999,0.915238
+tecator,0,3,3,1.2001323999999998,0.7309760000000001,0.8702629999999999
+tecator,0,3,4,1.2001323999999998,0.710483,0.853316
+tecator,0,3,5,1.2001323999999998,0.8919950000000001,1.05903
+tecator,6,4,0,1.4268459999999998,1.20912,1.39089
+tecator,6,4,1,1.4268459999999998,0.789858,0.868093
+tecator,6,4,2,1.4268459999999998,1.18649,1.22776
+tecator,6,4,3,1.4268459999999998,1.50458,1.67188
+tecator,6,4,4,1.4268459999999998,0.746992,0.999061
+tecator,6,4,5,1.4268459999999998,0.948876,1.10546
+wineRed,0,0,0,0.6416916,0.613186,0.638789
+wineRed,0,0,1,0.6416916,0.624128,0.641867
+wineRed,0,0,2,0.6416916,0.620232,0.632704
+wineRed,0,0,3,0.6416916,0.620875,0.6446069999999999
+wineRed,0,0,4,0.6416916,0.62569,0.635519
+wineRed,0,0,5,0.6416916,0.623648,0.639087
+wineRed,1,1,0,0.658825,0.631736,0.593846
+wineRed,1,1,1,0.658825,0.640626,0.620875
+wineRed,1,1,2,0.658825,0.628948,0.598579
+wineRed,1,1,3,0.658825,0.629147,0.6206
+wineRed,1,1,4,0.658825,0.626801,0.601979
+wineRed,1,1,5,0.658825,0.6304069999999999,0.606438
+wineRed,0,2,0,0.6472840000000001,0.616128,0.623107
+wineRed,0,2,1,0.6472840000000001,0.623189,0.6231770000000001
+wineRed,0,2,2,0.6472840000000001,0.621135,0.625532
+wineRed,0,2,3,0.6472840000000001,0.629031,0.634451
+wineRed,0,2,4,0.6472840000000001,0.619791,0.626684
+wineRed,0,2,5,0.6472840000000001,0.620958,0.625894
+wineRed,0,3,0,0.6479543999999999,0.623037,0.6318199999999999
+wineRed,0,3,1,0.6479543999999999,0.622916,0.621125
+wineRed,0,3,2,0.6479543999999999,0.642008,0.667042
+wineRed,0,3,3,0.6479543999999999,0.624138,0.630247
+wineRed,0,3,4,0.6479543999999999,0.632926,0.644705
+wineRed,0,3,5,0.6479543999999999,0.6253449999999999,0.63942
+wineRed,8,4,0,0.6333976,0.628414,0.724089
+wineRed,8,4,1,0.6333976,0.6157699999999999,0.6930649999999999
+wineRed,8,4,2,0.6333976,0.616865,0.698394
+wineRed,8,4,3,0.6333976,0.622817,0.706936
+wineRed,8,4,4,0.6333976,0.627638,0.696327
+wineRed,8,4,5,0.6333976,0.6215109999999999,0.703997
+wineWhite,5,0,0,0.7332479999999999,0.724403,0.7263
+wineWhite,5,0,1,0.7332479999999999,0.7768729999999999,0.7758550000000001
+wineWhite,5,0,2,0.7332479999999999,0.769562,0.770733
+wineWhite,5,0,3,0.7332479999999999,0.728956,0.731288
+wineWhite,5,0,4,0.7332479999999999,0.767055,0.764827
+wineWhite,5,0,5,0.7332479999999999,0.7251529999999999,0.726338
+wineWhite,3,1,0,0.7306858,0.738121,0.763871
+wineWhite,3,1,1,0.7306858,0.733183,0.746311
+wineWhite,3,1,2,0.7306858,0.7259180000000001,0.741973
+wineWhite,3,1,3,0.7306858,0.720691,0.734875
+wineWhite,3,1,4,0.7306858,0.723364,0.7419439999999999
+wineWhite,3,1,5,0.7306858,0.723425,0.735294
+wineWhite,7,2,0,0.7268142,0.723209,0.75107
+wineWhite,7,2,1,0.7268142,0.723649,0.751604
+wineWhite,7,2,2,0.7268142,0.723692,0.755479
+wineWhite,7,2,3,0.7268142,0.724681,0.764447
+wineWhite,7,2,4,0.7268142,0.72037,0.760213
+wineWhite,7,2,5,0.7268142,0.723383,0.75675
+wineWhite,7,3,0,0.7344972,0.731334,0.728326
+wineWhite,7,3,1,0.7344972,0.7378779999999999,0.7353729999999999
+wineWhite,7,3,2,0.7344972,0.733468,0.728544
+wineWhite,7,3,3,0.7344972,0.726475,0.7182189999999999
+wineWhite,7,3,4,0.7344972,0.747212,0.733258
+wineWhite,7,3,5,0.7344972,0.727942,0.7201649999999999
+wineWhite,7,4,0,0.7350916000000001,0.73146,0.7170529999999999
+wineWhite,7,4,1,0.7350916000000001,0.733243,0.718952
+wineWhite,7,4,2,0.7350916000000001,0.760283,0.736153
+wineWhite,7,4,3,0.7350916000000001,0.731514,0.719581
+wineWhite,7,4,4,0.7350916000000001,0.730544,0.720094
+wineWhite,7,4,5,0.7350916000000001,0.731399,0.721128
+yacht,1,0,0,8.36457,5.40642,5.04798
+yacht,1,0,1,8.36457,9.06548,8.59863
+yacht,1,0,2,8.36457,8.15398,7.957439999999999
+yacht,1,0,3,8.36457,9.789480000000001,9.29607
+yacht,1,0,4,8.36457,8.8036,7.98287
+yacht,1,0,5,8.36457,9.4944,8.91656
+yacht,0,1,0,8.87454,9.23795,9.65502
+yacht,0,1,1,8.87454,8.689860000000001,8.77957
+yacht,0,1,2,8.87454,8.76224,8.90018
+yacht,0,1,3,8.87454,8.76223,8.92525
+yacht,0,1,4,8.87454,8.647160000000001,8.99414
+yacht,0,1,5,8.87454,8.77913,9.12197
+yacht,3,2,0,9.206196,10.8531,10.4753
+yacht,3,2,1,9.206196,10.4549,10.1063
+yacht,3,2,2,9.206196,9.31421,9.8037
+yacht,3,2,3,9.206196,10.2785,10.0652
+yacht,3,2,4,9.206196,8.792110000000001,8.1639
+yacht,3,2,5,9.206196,8.28014,9.35869
+yacht,0,3,0,9.42021,7.18332,9.02651
+yacht,0,3,1,9.42021,7.0290300000000006,9.16341
+yacht,0,3,2,9.42021,7.1726899999999985,9.37788
+yacht,0,3,3,9.42021,8.30143,9.93567
+yacht,0,3,4,9.42021,9.05271,10.702
+yacht,0,3,5,9.42021,8.48137,10.1587
+yacht,1,4,0,9.295346,8.328,8.39772
+yacht,1,4,1,9.295346,9.73661,8.58089
+yacht,1,4,2,9.295346,9.62053,8.94367
+yacht,1,4,3,9.295346,8.48274,8.23144
+yacht,1,4,4,9.295346,9.81767,9.35377
+yacht,1,4,5,9.295345999999999,9.52104,8.96792

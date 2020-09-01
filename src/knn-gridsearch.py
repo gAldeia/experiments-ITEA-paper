@@ -1,17 +1,13 @@
 import os
-import glob
 
 import os.path as path
 import pandas  as pd
 import numpy   as np
 
-from itertools         import product
-from sklearn.metrics   import mean_squared_error, mean_absolute_error, make_scorer
+from sklearn.metrics   import mean_squared_error, make_scorer
 from sklearn.neighbors import KNeighborsRegressor
 
 from sklearn.model_selection import GridSearchCV
-
-from IPython.display         import display, Markdown, Latex
 
 cur_folder = os.getcwd() # Diretório atual
 

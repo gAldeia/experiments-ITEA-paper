@@ -77,10 +77,10 @@ def RMSE(yhat, y):
 gridsearch_configurations = {
     'population_size'        : [100, 250, 500],
     'generations'         : lambda conf: 100000//conf['population_size'],
-    'p_crossover'            : [0, 0.2, 0.5],
-    'p_subtree_mutation'     : lambda conf: np.ceil((1 - conf['p_crossover'])*10/3)/10,
-    'p_point_mutation'       : lambda conf: np.ceil((1 - conf['p_crossover'])*10/3)/10,
-    'p_hoist_mutation'       : lambda conf: 1 - (conf['p_crossover'] + 2*np.ceil((1 - conf['p_crossover'])*10/3)/10),
+    'p_crossover'            : [0.2, 0.5, 0.8],
+    'p_subtree_mutation'     : lambda conf: 0.2*(1 - conf['p_crossover'])/5,
+    'p_point_mutation'       : lambda conf: 0.2*(1 - conf['p_crossover'])/5,
+    'p_hoist_mutation'       : lambda conf: 0.1*(1 - conf['p_crossover'])/5,
 }
 
 keys, values, varying = [], [], []
@@ -106,7 +106,7 @@ for conf in confs:
 # Criando um dataframe para enumerar e visualizar melhor as configurações
 confs_df = pd.DataFrame(confs, index=[f'conf {i}' for i in range(len(confs))]).T
 confs_df.index.names = ['Parameters']
-confs_df.to_csv('gridsearch_configurations.csv')
+confs_df.to_csv('gplearn-gridsearch_configurations.csv')
 
 
 # Função que recebe um dataset e uma configuração e executa o algoritmo
@@ -125,9 +125,9 @@ def run(dataset_train, dataset_test, population_size, generations, p_crossover, 
         p_subtree_mutation=p_subtree_mutation,
         p_hoist_mutation=p_hoist_mutation,
         p_point_mutation=p_point_mutation,
-        max_samples=0.9,
-        verbose=0,
-        parsimony_coefficient=0.01,
+        max_samples=1.0,
+        verbose=1,
+        parsimony_coefficient=0.05,
         function_set = f_set,
         n_jobs=1
     )
