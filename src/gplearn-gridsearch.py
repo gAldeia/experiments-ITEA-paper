@@ -250,7 +250,7 @@ if __name__ == '__main__':
         'concrete',
         'energyCooling',
         'energyHeating',
-        'GeographicalOriginalofMusic',
+        'Geographical',
         'towerData',
         'tecator',
         'wineRed',
