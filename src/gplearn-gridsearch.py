@@ -1,5 +1,6 @@
 import os
 import glob
+import sys
 
 import os.path as path
 import pandas  as pd
@@ -28,35 +29,43 @@ warnings.filterwarnings("ignore")
 np.seterr(all='ignore')
 
 def plog(x):
-    z = np.log(x)
-    z[np.isnan(z)]=1
-    z[np.isinf(z)]=1
+    z = np.where(np.abs(x) > 0.001, np.log(np.abs(x)), 0.0)
+
+    z = np.where(np.abs(z) < 1e+1000, z, np.sign(z)*1e+1000)
+    z[~np.isfinite(z)]=0
+
     return z
 
 def pdiv(x,y):
-    z = x/y
-    z[np.isnan(z)]=1
-    z[np.isinf(z)]=1
+    z = np.where(np.abs(y) > 0.01, x/y, 1.0)
+
+    z = np.where(np.abs(z) < 1e+1000, z, np.sign(z)*1e+1000)
+    z[~np.isfinite(z)]=0
+
     return z
 
 def ptan(x):
     z = np.tanh(x)
-    z[np.isnan(z)]=1
-    z[np.isinf(z)]=1
+
+    z = np.where(np.abs(z) < 1e+1000, z, np.sign(z)*1e+1000)
+    z[~np.isfinite(z)]=0
+    
     return z
 
 def pexp(x):
-    z = np.exp(x)
-    z[np.isnan(z)]=1
-    z[np.isinf(z)]=1
+    z = np.where(np.exp(x) <= np.exp(100), np.exp(x), np.exp(100))
+    
+    z = np.where(np.abs(z) < 1e+1000, z, np.sign(z)*1e+1000)
+    z[~np.isfinite(z)]=0
+    
     return z
 
 myExp = make_function(pexp, "exp", 1)
-myTanh = make_function(np.tanh, "tanh", 1)
+#myTanh = make_function(np.tanh, "tanh", 1)
 mySqrt = make_function(lambda x: np.sqrt(np.abs(x)), "sqrtabs", 1)
 myLog = make_function(plog, "log",1)
 myDiv = make_function(pdiv, "pdiv", 2)
-myTan = make_function(ptan, "tan", 1)
+myTanh = make_function(ptan, "tan", 1)
         
     
 def RMSE(yhat, y):
@@ -126,7 +135,7 @@ def run(dataset_train, dataset_test, population_size, generations, p_crossover, 
         p_hoist_mutation=p_hoist_mutation,
         p_point_mutation=p_point_mutation,
         max_samples=1.0,
-        verbose=1,
+        verbose=0,
         parsimony_coefficient=0.05,
         function_set = f_set,
         n_jobs=1
@@ -138,19 +147,44 @@ def run(dataset_train, dataset_test, population_size, generations, p_crossover, 
     
     
 # Função que faz a busca pela melhor configuração:
-def gridsearch(dataset_train, confs):
+def gridsearch(dataset_train, confs, ds, fold):
     
-    kf = KFold(n_splits=5, shuffle=True)
+    # Para salvar o andamento do gridsearch e poder retomar
+    gridDF = pd.DataFrame(columns = ['dataset', 'Fold', 'conf'] + [f'RMSE_{i}' for i in range(5)])
+    gridDF = gridDF.set_index(['dataset', 'Fold', 'conf'])
+
+    if os.path.isfile(f'../docs/gplearn-{ds}-gridsearch.csv'):
+        gridDF = pd.read_csv(f'../docs/gplearn-{ds}-gridsearch.csv')
+        gridDF = gridDF.set_index(['dataset', 'Fold', 'conf'])
+    
+    # Random state para poder retomar
+    kf = KFold(n_splits=5, shuffle=True, random_state=42)
 
     # (rmse_cv, configuração, indice da configuração)
     best_conf = (np.inf, {}, -1)
     
     for i, conf in enumerate(confs):
-        print(f'Testando configuração {i}/{len(confs)}')
-        
+        # Verificando se esse fold de cv já foi avaliado.
+        # A linha da configuração foi criada - vamos pegar os valores calculados ou calcular um novo
+        if gridDF.index.isin([(ds, fold, i)]).any():
+            print(f'Retomando gridsearch para configuração {i}')
+        else:
+            print(f'Testando configuração {i}/{len(confs)}')
+            # Vamos criar a linha e preencher com nan
+
+            gridDF.loc[(ds, fold, i), :] = (np.nan, np.nan, np.nan, np.nan, np.nan)
+
+            gridDF.to_csv(f'../docs/gplearn-{ds}-gridsearch.csv', index=True)
+
         RMSE_cv = []
-        for fold, (train_index, test_index) in enumerate(kf.split(dataset_train)):
-            print(f'Fold {fold}')
+        for j, (train_index, test_index) in enumerate(kf.split(dataset_train)):
+            if not np.isnan(gridDF.loc[(ds, fold, i), f'RMSE_{j}']):
+                RMSE_cv.append(gridDF.loc[(ds, fold, i), f'RMSE_{j}'])
+                print(f'Recuperando RMSE do fold de cv {j}: {RMSE_cv[-1]}')
+
+                continue
+            else:
+                print(f'Calculando RMSE do fold de cv {j}...')
 
             # Estimar tempo restante
             t = time.time()
@@ -159,10 +193,16 @@ def gridsearch(dataset_train, confs):
         
             # Estimar tempo restante
             last_t = time.time() - t
+
             print(f'Tempo restante estimado: {get_remaining_time(last_t)}')
             
-            
             RMSE_cv.append(RMSE_test)
+
+            # Aqui sabemos que a linha existe pois ou já existia ou foi criada
+            gridDF.loc[(ds, fold, i), f'RMSE_{j}'] = RMSE_test
+            
+            # Salvar essa nova avaliação
+            gridDF.to_csv(f'../docs/gplearn-{ds}-gridsearch.csv', index=True)
 
         print(f': {np.mean(RMSE_cv)}, {RMSE_cv}')
         if np.mean(RMSE_cv) < best_conf[0]:
@@ -218,10 +258,21 @@ if __name__ == '__main__':
         'yacht',
     ]    
 
+    if len(sys.argv)== 1:
+        print(f'Informe um dataset para executar. Possiveís datasets: {datasets}')
+        sys.exit()
+
+    if str(sys.argv[1]) not in datasets:
+        print(f'dataset {str(sys.argv[1])} não conhecido.')
+        sys.exit()
+
+    # Pegando dataset passado
+    ds = str(sys.argv[1]) #lista de argumentos, índice 0 é o nome do programa. 
+
     # ---------------------------
     columns   = ['dataset','conf','Fold','Rep','RMSE_cv','RMSE_train','RMSE_test']
 
-    fname     = '../docs/gplearn-resultsregression.csv'
+    fname     = f'../docs/gplearn-{ds}-resultsregression.csv'
 
     results   = {c:[] for c in columns}
     resultsDF = pd.DataFrame(columns=columns)
@@ -230,61 +281,60 @@ if __name__ == '__main__':
         resultsDF = pd.read_csv(fname)
         results   = resultsDF.to_dict('list')
 
-    for ds in datasets:
-        print(f'Executando agora para o dataset {ds}')
-        for fold in range(n_folds):
-            dataset_train, dataset_test = None, None
+    print(f'Executando agora para o dataset {ds}')
+    for fold in range(n_folds):
+        dataset_train, dataset_test = None, None
+        
+        # evitar tentar abrir arquivos que não existem
+        try:
+            dataset_train = np.loadtxt(f'{datasets_folder}/{ds}-train-{fold}.dat', delimiter=',')
+            dataset_test  = np.loadtxt(f'{datasets_folder}/{ds}-test-{fold}.dat', delimiter=',')
+        except:
+            print(f'Dataset {dataset_train} does not exist.')
+            continue
             
-            # evitar tentar abrir arquivos que não existem
-            try:
-                dataset_train = np.loadtxt(f'{datasets_folder}/{ds}-train-{fold}.dat', delimiter=',')
-                dataset_test  = np.loadtxt(f'{datasets_folder}/{ds}-test-{fold}.dat', delimiter=',')
-            except:
-                print(f'Dataset {dataset_train} does not exist.')
+        print(f'Executando para o fold {fold}')
+
+        RMSE_cv, conf, conf_id = None, None, None
+        if len(resultsDF[(resultsDF['dataset']==ds) &(resultsDF['Fold']==fold)])>0:
+            # Verificar se aquele fold já foi avaliado em alguma repetição, e caso tenha sido
+            # pega a configuração utilizada em uma delas (vao ser todas iguais, tanto faz a repetição
+            # contanto que seja no mesmo fold)
+            aux_resultsDF = resultsDF[(resultsDF['dataset']==ds) &(resultsDF['Fold']==fold)]
+            conf_id = aux_resultsDF['conf'].values[0]
+            RMSE_cv = aux_resultsDF['RMSE_cv'].values[0]
+            conf    = confs[conf_id]
+
+            print(f'Pegando configuração avaliada anteriormente: {RMSE_cv}, {conf_id}')
+        else:
+            # Obtendo melhor configuração para esse treino-teste
+            print('Obtendo a melhor configuração utilizando 5-fold cv no treino')
+            RMSE_cv, conf, conf_id = gridsearch(dataset_train, confs, ds, fold)
+
+        print('Começando a testar a melhor configuração obtida')
+        for rep in range(runs_per_fold):
+            if len(resultsDF[
+                (resultsDF['dataset']==ds) &
+                (resultsDF['Fold']==fold)  &
+                (resultsDF['Rep']==rep)
+            ])==1:
+                print(f'already evaluated {ds}-{fold}-{rep}')
+
                 continue
-                
-            print(f'Executando para o fold {fold}')
 
-            RMSE_cv, conf, conf_id = None, None, None
-            if len(resultsDF[(resultsDF['dataset']==ds) &(resultsDF['Fold']==fold)])>0:
-                # Verificar se aquele fold já foi avaliado em alguma repetição, e caso tenha sido
-                # pega a configuração utilizada em uma delas (vao ser todas iguais, tanto faz a repetição
-                # contanto que seja no mesmo fold)
-                aux_resultsDF = resultsDF[(resultsDF['dataset']==ds) &(resultsDF['Fold']==fold)]
-                conf_id = aux_resultsDF['conf'].values[0]
-                RMSE_cv = aux_resultsDF['RMSE_cv'].values[0]
-                conf    = confs[conf_id]
+            print(f'evaluating config {conf_id} for {ds}-{fold}-{rep}')
+            
+            RMSE_train, RMSE_test = run(dataset_train, dataset_test, **conf)
 
-                print(f'Pegando configuração avaliada anteriormente: {RMSE_cv}, {conf_id}')
-            else:
-                # Obtendo melhor configuração para esse treino-teste
-                print('Obtendo a melhor configuração utilizando 5-fold cv no treino')
-                RMSE_cv, conf, conf_id = gridsearch(dataset_train, confs)
+            results['dataset'].append(ds)
+            results['conf'].append(conf_id)
+            results['RMSE_cv'].append(RMSE_cv)
+            results['RMSE_train'].append(RMSE_train)
+            results['RMSE_test'].append(RMSE_test)
+            results['Fold'].append(fold)
+            results['Rep'].append(rep)
 
-            print('Começando a testar a melhor configuração obtida')
-            for rep in range(runs_per_fold):
-                if len(resultsDF[
-                    (resultsDF['dataset']==ds) &
-                    (resultsDF['Fold']==fold)  &
-                    (resultsDF['Rep']==rep)
-                ])==1:
-                    print(f'already evaluated {ds}-{fold}-{rep}')
-
-                    continue
-
-                print(f'evaluating config {conf_id} for {ds}-{fold}-{rep}')
-                
-                RMSE_train, RMSE_test = run(dataset_train, dataset_test, **conf)
-
-                results['dataset'].append(ds)
-                results['conf'].append(conf_id)
-                results['RMSE_cv'].append(RMSE_cv)
-                results['RMSE_train'].append(RMSE_train)
-                results['RMSE_test'].append(RMSE_test)
-                results['Fold'].append(fold)
-                results['Rep'].append(rep)
-
-                df = pd.DataFrame(results)
-                df.to_csv(fname, index=False)
+            df = pd.DataFrame(results)
+            df.to_csv(fname, index=False)
 
     print('done')

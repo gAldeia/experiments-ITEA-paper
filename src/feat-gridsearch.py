@@ -51,8 +51,8 @@ def RMSE(yhat, y):
 gridsearch_configurations = {
     'pop_size'   : [100, 250, 500],
     'gens'       : lambda conf: 100000//conf['pop_size'],
-    'cross_rate' : [0, 0.2, 0.5],
-    'fb'         : [0, 0.2, 0.5]
+    'cross_rate' : [0.2, 0.5, 0.8],
+    'fb'         : [0.2, 0.5, 0.8]
 }
 
 keys, values, varying = [], [], []
@@ -134,8 +134,6 @@ def gridsearch(dataset_train, confs, ds, fold):
     best_conf = (np.inf, {}, -1)
     
     for i, conf in enumerate(confs):
-        print(f'Testando configuração {i}/{len(confs)}')
-        
         # Verificando se esse fold de cv já foi avaliado.
         # A linha da configuração foi criada - vamos pegar os valores calculados ou calcular um novo
         if gridDF.index.isin([(ds, fold, i)]).any():
@@ -149,16 +147,14 @@ def gridsearch(dataset_train, confs, ds, fold):
             gridDF.to_csv('../docs/feat-gridsearch.csv', index=True)
 
         RMSE_cv = []
-        for fold, (train_index, test_index) in enumerate(kf.split(dataset_train)):
-            print(f'Fold {fold}')
-
+        for j, (train_index, test_index) in enumerate(kf.split(dataset_train)):
             if not np.isnan(gridDF.loc[(ds, fold, i), f'RMSE_{j}']):
                 RMSE_cv.append(gridDF.loc[(ds, fold, i), f'RMSE_{j}'])
-                print(f'Recuperando RMSE do fold {j}: {RMSE_cv[-1]}')
+                print(f'Recuperando RMSE do fold de cv {j}: {RMSE_cv[-1]}')
 
                 continue
             else:
-                print(f'Calculando RMSE do fold {j}...')
+                print(f'Calculando RMSE do fold de cv {j}...')
 
             # Estimar tempo restante
             t = time.time()
