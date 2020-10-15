@@ -1,5 +1,8 @@
 contributors (sorted alphabetically)
 ======
 
-* [Guilherme Aldeia](https://github.com/gAldeia)
-  * Creator of the repository content
+* [Fabrício Olivetti de França](https://github.com/folivetti)
+  * Mentor
+
+* [Guilherme Seidyo Imai Aldeia](https://github.com/gAldeia)
+  * MsC student at Federal University of ABC 
