@@ -65,3 +65,8 @@ In the next topics, the folder structure will be presented, then a detailed desc
         * Lasso, LassoLars, Rigde, Tree, Forest, kNN, and elnet results are obtained with the gridsearchCV and regressor implementations provided by scikit-learn. The use of the script is pretty straightfoward.
         * dcgp, feat, gplearn and itea are evolutionary algorithms and use our implementation of gridsearch. The implementation creates a file enumerating the possible configurations for the gridsearch as a reference.
             * gplearn, itea and feat are designed to create checkpoints even during the gridsearch, due to the slow time of execution.
+
+
+## Acknowledgments
+
+This project is supported by Fundação de Amparo à Pesquisa do Estado de São Paulo (FAPESP), grant number 2018/14173-8.
